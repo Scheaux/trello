@@ -1,3 +1,11 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-wrap: break-word;
+}
+
 body {
   background-color: rgb(54, 64, 95);
 }
@@ -34,11 +42,13 @@ h1 {
   border-radius: 3px;
   padding: 5px;
   margin-bottom: 10px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow-wrap: break-word;
+  position: relative;
+}
+
+.card_close {
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
 
 .card.dragged {
@@ -63,4 +73,18 @@ h1 {
 .anchor {
   background-color: rgb(151, 151, 151);
   border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.card_input {
+  background-color: #fff;
+  box-shadow: 2px 1px 3px rgb(136, 136, 136);
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 290px;
+}
+
+.hidden {
+  display: none;
 }
